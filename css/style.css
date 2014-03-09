@@ -1,8 +1,75 @@
-
-/* Thoughts on fonts:
-PT Serif all the way!
-
-*/
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&subset=latin,latin-ext);
+/* TYPOGRAPHY */
 body{
+	font-family:"PT Serif",Serif;
+	font-size:1em;
+	line-height:1.3em;
+	background:url("/img/bg.png") no-repeat center top fixed;
+	background-color:#eee;
+}
+a{
+	text-decoration:none;
+}
 
+/* HEADER */
+#header{
+	text-align:center;
+	padding:1em;
+}
+#maintitle a{
+	color:#555;
+	font-size:1.8em;
+	font-weight:700;
+	display:block;
+	padding:0.2em;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	margin-bottom:0.5em;
+}
+#maintitle a:hover{
+	color:#000;
+}
+#subtitle{
+	color:#777;
+	display:block;
+	font-style:italic;
+
+}
+
+/* GENERAL */
+.content{
+	width:750px;
+	margin: 0 auto;
+	padding:0.2em;
+	text-align:left;
+}
+
+/* FRONT PAGE */
+.linkblock{
+	display:block;
+	background-color:#eee;
+	border-radius:5px;
+	width:300px;
+	margin:0.8em auto;
+	padding:0.3em;
+	text-align:center;
+	border:1px solid #ddd;
+}
+.linkblock:hover{
+	background-color:#fff;
+}
+.linkblock a{
+	display:block;
+	width:100%;
+	color:#000;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	padding-bottom:0.3em;
+	border-bottom:1px solid #ddd;
+
+}
+
+/* ARTICLES */
+.article{
+	border-radius:10px;
 }
