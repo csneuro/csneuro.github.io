@@ -18,7 +18,9 @@ Explicitly, inquiry in neurosemantics attempts to answer these questions, as des
 
 In this domain, researchers have spent most of their energy trying to understand how neurological data can be processed to yield semantic dimensions of a word and, in reverse, how semantic dimensions of a word can be used as predictors of observed neural activity. Neurological data takes the form of activity measured by an imaging instrument, and semantic dimensions can be thought of as "associational weights" or "how much word $x$ has to do with subject $y$".
 
-In the studies we are considering here, researchers provided subjects with stimuli in the form of cues for concrete nouns, either as pictures or letters. They then obtained raw data of neural activity using an fMRI, MEG, or EEG and ``cleaned'' them up.\footnote{All techniques used to get brain data introduce artifacts which we want to remove before analysis. One example is the noise caused by the frequency at which AC power is provided: 60 Hz in the United States and 50 Hz most anywhere else. The details of what else is accounted for is beyond the scope of this review.}
+In the studies we are considering here, researchers provided subjects with stimuli in the form of cues for concrete nouns, either as pictures or letters. They then obtained raw data of neural activity using an fMRI, MEG, or EEG and ``cleaned'' them up.[^]
+
+[^]:All techniques used to get brain data introduce artifacts which we want to remove before analysis. One example is the noise caused by the frequency at which AC power is provided: 60 Hz in the United States and 50 Hz most anywhere else. The details of what else is accounted for is beyond the scope of this review.
 
 There are two steps involved in moving from ``cleaned-up'' data to semantic information: feature extraction and classification \cite{chan2012}. 
 
