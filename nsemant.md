@@ -32,30 +32,30 @@ Simply, the classifier tries to learn a function f : X → Y as best it can wher
 
 There’s a problem: neural data are readily observable, but how do we decide on semantic categories? Several approaches were used.
 
-The first study we considered, [Mitchell *et al.* (2008)][mitchell2008], used a technique from computational linguistics to approximate a word’s semantic features from collocations in a large corpus. Thus the assumption is that
+The first study we considered, [Mitchell et al. (2008)][mitchell2008], used a technique from computational linguistics to approximate a word’s semantic features from collocations in a large corpus. Thus the assumption is that
 
 > the semantic features that distinguish the meanings of arbitrary concrete nouns are reflected in the statistics of their use within a very large text corpus.
 
-Testing trained classifiers against expected semantic values from analysis of a corpus, Mitchell *et al.* found, on the basis of success in moving from a word’s corporeal semantic features to predicted neural activity, that concrete nouns are associated with significant activity in both sensory-motor regions and non-sensory-motor regions.
+Testing trained classifiers against expected semantic values from analysis of a corpus, Mitchell et al. found, on the basis of success in moving from a word’s corporeal semantic features to predicted neural activity, that concrete nouns are associated with significant activity in both sensory-motor regions and non-sensory-motor regions.
 
-A direct continuation of this study is [Just *et al.* (2010)][just2010]. Instead of taking semantic categories for granted, factor analysis was used to isolate what came out to be just *three* brain groups from a selection of 60 concrete nouns that seemed to correspond to semantic properties having to do with eating, manipulability, and shelter. Further, using just brain activity in these three regions, semantic dimensions of an unknown word were able to be inferred with good accuracy. The inverse, moving from semantic dimensions of a word not in the training set to predict brain activity, was also done with good accuracy. That concrete nouns appear to *essentially* be parameterizations of only three factors is a very significant finding.
+A direct continuation of this study is [Just et al. (2010)][just2010]. Instead of taking semantic categories for granted, factor analysis was used to isolate what came out to be just *three* brain groups from a selection of 60 concrete nouns that seemed to correspond to semantic properties having to do with eating, manipulability, and shelter. Further, using just brain activity in these three regions, semantic dimensions of an unknown word were able to be inferred with good accuracy. The inverse, moving from semantic dimensions of a word not in the training set to predict brain activity, was also done with good accuracy. That concrete nouns appear to *essentially* be parameterizations of only three factors is a very significant finding.
 
 Further, the activation patterns for words encoded in these three parameters was found to correlate strongly with analogous values obtained from the latent semantic analysis technique employed on a large English corpus, giving us confidence that the parameters have significance.
 
-A third study in this series, Sudre *et al.* (2012), engaged in a similar investigation, but this time with an MEG. MEG’s measure neural activity by detecting fluctuations in the magnetic field around the subject’s head caused by neural spikes. This means that they measure neural activity much more “directly” than fMRI’s, which gauge neural activity by observing blood oxygenation levels, which have a latency of 1000-2000ms. Thus fMRI’s have very poor temporal resolution. This is critical, as it may mean that we were missing information in the most early stages of neural activity after the stimulus.
+A third study in this series, [Sudre et al. (2012)][sudre2012], engaged in a similar investigation, but this time with an MEG. MEG’s measure neural activity by detecting fluctuations in the magnetic field around the subject’s head caused by neural spikes. This means that they measure neural activity much more “directly” than fMRI’s, which gauge neural activity by observing blood oxygenation levels, which have a latency of 1000-2000ms. Thus fMRI’s have very poor temporal resolution. This is critical, as it may mean that we were missing information in the most early stages of neural activity after the stimulus.
 
-The study did indeed find that the activation patterns in the earliest stages seemed to encode different semantic features than did later ones. They used as a ground truth for the corpus a database constructed using Amazon’s *Mechanical Turk* service consisting of answers to 218 “20 questions-style” questions about the same 60-word corpus from before such as “is it alive?” and “is it shiny?”. They then trained classifiers to decode semantic information at 50ms intervals. Critically, they found that perceptual (or sensory) features were decodable with the most accuracy in the 100ms-200ms interval while semantic features were most decodable in the intervals after 250ms. The study did find that the most decodable semantic features in this study could be grouped into features about animacy, manipulability, and size, which are similar to previous categories named shelter, manipulability, and eating from the earlier study. But it critically found that activation regions did not exactly match those of the 2010 study conducted with an fMRI.
+The study did indeed find that the activation patterns in the earliest stages seemed to encode different semantic features than did later ones. They used as a ground truth for the corpus a database constructed using Amazon’s Mechanical Turk service consisting of answers to 218 “20 questions-style” questions about the same 60-word corpus from before such as “is it alive?” and “is it shiny?”. They then trained classifiers to decode semantic information at 50ms intervals. Critically, they found that perceptual (or sensory) features were decodable with the most accuracy in the 100ms-200ms interval while semantic features were most decodable in the intervals after 250ms. The study did find that the most decodable semantic features in this study could be grouped into features about animacy, manipulability, and size, which are similar to previous categories named shelter, manipulability, and eating from the earlier study. But it critically found that activation regions did not exactly match those of the 2010 study conducted with an fMRI.
 
 The suggestion Sudre advances is that because the MEG is much more sensitive temporally, it was more sensitive to activity that would have been hard to measure with an fMRI. They further venture that the MEG was picking up “low level” information (the shape, size, feel of a screwdriver) vs. what the fMRI was measuring, “high level” information (screwing in a screw with a screwdriver, moving it with the hand). This hypothesis is advanced under the intuitive assumption that as time increases the mind considers more abstract features of the stimulus.
 
-Another study we considered was Chan *et al.* (2012). Chan combined both MEG *and* EEG data from his subjects, being given stimuli comparable to those in previous studies, to investigate the effects of choice of modality on perceived brain activity. First, Sudre’s finding that MEG/EEG-mediated findings differed from fMRI-mediated findings was confirmed for the same reason advanced by Sudre: the poor temporal resolution of fMRI’s. Second, the study found that the EEG was much less useful in linking neural activity to semantic features, but Chan suggests that this may simply be due to the EEG having much fewer sensors. (The implication is that an EEG with just as many sensors as an MEG might produce comparable results.) He goes on to say, having observed that the EEG and MEG seem to access *different* semantic information, that
+Another study we considered was [Chan et al. (2012)][chan2012]. Chan combined both MEG *and* EEG data from his subjects, being given stimuli comparable to those in previous studies, to investigate the effects of choice of modality on perceived brain activity. First, Sudre’s finding that MEG/EEG-mediated findings differed from fMRI-mediated findings was confirmed for the same reason advanced by Sudre: the poor temporal resolution of fMRI’s. Second, the study found that the EEG was much less useful in linking neural activity to semantic features, but Chan suggests that this may simply be due to the EEG having much fewer sensors. (The implication is that an EEG with just as many sensors as an MEG might produce comparable results.) He goes on to say, having observed that the EEG and MEG seem to access *different* semantic information, that
 
 > neither recording modality is strictly superior to the other, and that EEG and MEG each provide unique information regarding neural processes.
 
 Problems with assumptions
 -------------------------
 
-In Mitchell *et al.* (2008), the seminal paper in neurosemantics among those we reviewed, one key assumption is indicated which most research in the domain has been founded on:
+In [Mitchell et al. (2008)][mitchell2008], the seminal paper in neurosemantics among those we reviewed, one key assumption is indicated which most research in the domain has been founded on:
 
 > [The approach] assumes that the brain activity observed when thinking about any concrete noun can be derived as a weighted linear sum of contributions from each of its semantic features. Although the correctness of this linearity assumption is debatable, it is consistent with the widespread use of linear models in fMRI analysis (27) and with the assumption that fMRI activation often reflects a linear superposition of contributions from different sources.
 
@@ -64,6 +64,14 @@ This is a significant assumption. *A priori*, we can easily imagine that a weigh
 Further, we observed that an assumption that pervades the literature is that neural activity is positively correlated with how much the region of neural activity has to do with the mental task at hand. Could we imagine it otherwise? We may be tempted to entertain the thought that, for example, perhaps the brain could handle a task by *decreasing* or *changing the rhythm of* groups of neurons that are normally more active without a task.
 
 So far these two assumptions have not outright failed researchers, but we may see them pushed to their breaking points in the future.
+
+From Vibrations to Semantic Dimensions
+--------------------------------------
+Lorem ipsum
+
+Neural Bases of Metaphors
+-------------------------
+
 
 Conclusion
 ----------
@@ -74,13 +82,12 @@ But we do not wish to understate the accomplishments that have been made. These 
 
 There are many directions future research could take. Very many questions remain unanswered, among them being
 
-[distributed vs. distributed-plus-hub vs. convergent zones, Mr. M]
+
+trashheap
+---------
+distributed vs. distributed-plus-hub vs. convergent zones, Mr. M
 
 outline big questions posed in Where do you Know What you Know? also actual relations between words
-
-Neural Bases of Metaphors (16)
-
-From Eardrum Vibrations to Semantic Dimensions (14)
 
 [1] All techniques used to get brain data introduce artifacts which we want to remove before analysis. One example is the noise caused by the frequency at which AC power is provided: 60 Hz in the United States and 50 Hz most anywhere else. The details of what else is accounted for is beyond the scope of this review.
 
@@ -92,23 +99,23 @@ From Eardrum Vibrations to Semantic Dimensions (14)
 
 
 
-[just2010]: Just MA, Cherkassky VL, Aryal S, Mitchell TM (2010). A Neurosemantic Theory of Concrete Noun Representation Based on the Underlying Brain Codes. PLoS ONE 5 (1): e8622. doi:10.1371/journal.pone.0008622
+[just2010]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2797630/
 
-[mitchell2008]: Mitchell TM, Shinkareva SV, Carlson A, Chang KM, Malave VL, Mason RA, Just MA (2008). Predicting human brain activity associated with the meanings of nouns. Science 2008;320(5880):1191-1195. doi:10.1126/science.1152876.
+[mitchell2008]: http://www.sciencemag.org/content/320/5880/1191.full
 
-[mohamed2011]: Mohamed T, Hruschka ER Jr., Mitchell TM (2011). Discovering Relations between Noun Categories. In Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP).
+[mohamed2011]: http://rtw.ml.cmu.edu/papers/mohamed-emnlp11.pdf
 
-[sudre2012]: Sudre G, Pomerleau D, Palatucci M, Wehbe L, Fyshe A, Salmelin R, Mitchell T. M (2012). Tracking neural coding of perceptual and semantic features of concrete nouns. NeuroImage, 62, 451-463.
+[sudre2012]: http://www.ncbi.nlm.nih.gov/pubmed/22565201
 
-[patterson2007]: Patterson K. et al (2007). Where do you know what you know? The representation of semantic knowledge in the human brain? Nat. Rev. 8, 976-987
+[patterson2007]: http://www.nature.com/nrn/journal/v8/n12/abs/nrn2277.html
 
-[chan2012]: Chan AM, Halgren E, Marinkovic K, Cash SS (2011). Decoding word and category-specific spatiotemporal representations from MEG and EEG. Neuroimage 54, 3028-3039.10.1016/j.neuroimage.2010.10.073
+[chan2012]: http://www.ncbi.nlm.nih.gov/pubmed/21040796
 
-[murphy2012]: Murphy B, Talukdar P, Mitchell T (2012). Selecting corpus-semantic models for neurolinguistic decoding. SemEval '12 Proceedings of the First Joint Conference on Lexical and Computational Semantics - Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation, p. 114-123
+[murphy2012]: http://www.cs.cmu.edu/~tom/pubs/Murphy_2012.pdf
 
-[travis2013]: Travis KE, Leonard MK, Chan AM, Torres C, Sizemore ML, Qu Z, Eskandar E, Dale AM, Elman JL, Cash SS, Halgren E (2013). Independence of early speech processing from word meaning. Cereb Corex. 2013 Oct;23(10):2370-9. doi: 10.1093/cercor/bhs228.
+[travis2013]: http://www.ncbi.nlm.nih.gov/pubmed/22875868
 
-[parkinson2014]: Parkinson C, Liu S, Wheatley T (2014). A Common Cortical Metric for Spatial, Temporal, and Social Distance. The Journal of Neuroscience, 29 January 2014, 34(5): 1979-1987; doi: 10.1523/JNEUROSCI.2159-13.2014
+[parkinson2014]: http://www.jneurosci.org/content/34/5/1979.full
 
 
 
