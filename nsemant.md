@@ -32,13 +32,13 @@ Simply, the classifier tries to learn a function f : X → Y as best it can wher
 
 There’s a problem: neural data are readily observable, but how do we decide on semantic categories? Several approaches were used.
 
-The first study we considered, Mitchell *et al.* (2008), used a technique from computational linguistics to approximate a word’s semantic features from collocations in a large corpus. Thus the assumption is that
+The first study we considered, [Mitchell *et al.* (2008)][mitchell2008], used a technique from computational linguistics to approximate a word’s semantic features from collocations in a large corpus. Thus the assumption is that
 
 > the semantic features that distinguish the meanings of arbitrary concrete nouns are reflected in the statistics of their use within a very large text corpus.
 
 Testing trained classifiers against expected semantic values from analysis of a corpus, Mitchell *et al.* found, on the basis of success in moving from a word’s corporeal semantic features to predicted neural activity, that concrete nouns are associated with significant activity in both sensory-motor regions and non-sensory-motor regions.
 
-A direct continuation of this study is Just *et al.* (2010). Instead of taking semantic categories for granted, factor analysis was used to isolate what came out to be just *three* brain groups from a selection of 60 concrete nouns that seemed to correspond to semantic properties having to do with eating, manipulability, and shelter. Further, using just brain activity in these three regions, semantic dimensions of an unknown word were able to be inferred with good accuracy. The inverse, moving from semantic dimensions of a word not in the training set to predict brain activity, was also done with good accuracy. That concrete nouns appear to *essentially* be parameterizations of only three factors is a very significant finding.
+A direct continuation of this study is [Just *et al.* (2010)][just2010]. Instead of taking semantic categories for granted, factor analysis was used to isolate what came out to be just *three* brain groups from a selection of 60 concrete nouns that seemed to correspond to semantic properties having to do with eating, manipulability, and shelter. Further, using just brain activity in these three regions, semantic dimensions of an unknown word were able to be inferred with good accuracy. The inverse, moving from semantic dimensions of a word not in the training set to predict brain activity, was also done with good accuracy. That concrete nouns appear to *essentially* be parameterizations of only three factors is a very significant finding.
 
 Further, the activation patterns for words encoded in these three parameters was found to correlate strongly with analogous values obtained from the latent semantic analysis technique employed on a large English corpus, giving us confidence that the parameters have significance.
 
@@ -87,3 +87,28 @@ From Eardrum Vibrations to Semantic Dimensions (14)
 [2] “sources” here is a catch-all for the “atomic” part of a feature vector of a study, whether they’re readings of MEG/EEG channels or fMRI voxels.
 
 [3] What this really means varies from study to study. For example, in , the voxels observed to be most stable were chosen.
+
+
+
+
+
+[just2010]: Just MA, Cherkassky VL, Aryal S, Mitchell TM (2010). A Neurosemantic Theory of Concrete Noun Representation Based on the Underlying Brain Codes. PLoS ONE 5 (1): e8622. doi:10.1371/journal.pone.0008622
+
+[mitchell2008]: Mitchell TM, Shinkareva SV, Carlson A, Chang KM, Malave VL, Mason RA, Just MA (2008). Predicting human brain activity associated with the meanings of nouns. Science 2008;320(5880):1191-1195. doi:10.1126/science.1152876.
+
+[mohamed2011]: Mohamed T, Hruschka ER Jr., Mitchell TM (2011). Discovering Relations between Noun Categories. In Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP).
+
+[sudre2012]: Sudre G, Pomerleau D, Palatucci M, Wehbe L, Fyshe A, Salmelin R, Mitchell T. M (2012). Tracking neural coding of perceptual and semantic features of concrete nouns. NeuroImage, 62, 451-463.
+
+[patterson2007]: Patterson K. et al (2007). Where do you know what you know? The representation of semantic knowledge in the human brain? Nat. Rev. 8, 976-987
+
+[chan2012]: Chan AM, Halgren E, Marinkovic K, Cash SS (2011). Decoding word and category-specific spatiotemporal representations from MEG and EEG. Neuroimage 54, 3028-3039.10.1016/j.neuroimage.2010.10.073
+
+[murphy2012]: Murphy B, Talukdar P, Mitchell T (2012). Selecting corpus-semantic models for neurolinguistic decoding. SemEval '12 Proceedings of the First Joint Conference on Lexical and Computational Semantics - Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation, p. 114-123
+
+[travis2013]: Travis KE, Leonard MK, Chan AM, Torres C, Sizemore ML, Qu Z, Eskandar E, Dale AM, Elman JL, Cash SS, Halgren E (2013). Independence of early speech processing from word meaning. Cereb Corex. 2013 Oct;23(10):2370-9. doi: 10.1093/cercor/bhs228.
+
+[parkinson2014]: Parkinson C, Liu S, Wheatley T (2014). A Common Cortical Metric for Spatial, Temporal, and Social Distance. The Journal of Neuroscience, 29 January 2014, 34(5): 1979-1987; doi: 10.1523/JNEUROSCI.2159-13.2014
+
+
+
