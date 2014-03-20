@@ -50,3 +50,8 @@ will put summary from paper #17/18
 ## Conclusion
 
 need to write!
+
+## References
+<!-- Here we should use the format we had in the LaTeX document-->
+
+Tenenbaum, 2011
