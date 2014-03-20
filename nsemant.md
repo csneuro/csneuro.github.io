@@ -2,7 +2,6 @@
 layout: article
 title: Neurosemantics
 ---
-
 Neurosemantic Word Representation
 =================================
 
@@ -19,17 +18,17 @@ Explicitly, inquiry in neurosemantics attempts to answer these questions, as des
 Mapping Between Observed Neural Activity and Semantic Dimensions
 ----------------------------------------------------------------
 
-In this domain, researchers have spent most of their energy trying to understand how neurological data can be processed to yield semantic dimensions of a word and, in reverse, how semantic dimensions of a word can be used as predictors of observed neural activity. Neurological data takes the form of activity measured by an imaging instrument, and semantic dimensions can be thought of as “associational weights” or “how much word \(x\) has to do with subject \(y\)”.
+In this domain, researchers have spent most of their energy trying to understand how neurological data can be processed to yield semantic dimensions of a word and, in reverse, how semantic dimensions of a word can be used as predictors of observed neural activity. Neurological data takes the form of activity measured by an imaging instrument, and semantic dimensions can be thought of as “associational weights” or “how much word x has to do with subject y”.
 
 In the studies we are considering here, researchers provided subjects with stimuli in the form of cues for concrete nouns, either as pictures or letters. They then obtained raw data of neural activity using an fMRI, MEG, or EEG and “cleaned” them up.[1]
 
-There are two steps involved in moving from “cleaned-up” data to semantic information: feature extraction and classification .
+There are two steps involved in moving from “cleaned-up” data to semantic information: feature extraction and classification.
 
-Feature extraction involves somehow reducing the amount of the data to be considered. This is done in part because it reduces the computational cost of the classification task. This is important because considering all the data can easily make the data unanalyzable in a reasonable amount of time. Further, it has been shown, at least in some studies, that considering more data beyond a certain point does not significantly improve performance of analysis . Each study handles data differently, but broadly, the amount of data can be reduced in a couple of ways. Some studies reduced data by averaging over all sources[2] over large intervals like 50ms . Others left sampling rate high but manually set a limit on how many sources they collected data from, selecting only the most ‘informative’[3] ones . Once the data was cleaned and pared, neat vectors ready to be classified were left.
+Feature extraction involves somehow reducing the amount of the data to be considered. This is done in part because it reduces the computational cost of the classification task. This is important because considering all the data can easily make the data unanalyzable in a reasonable amount of time. Further, it has been shown, at least in some studies, that considering more data beyond a certain point does not significantly improve performance of analysis. Each study handles data differently, but broadly, the amount of data can be reduced in a couple of ways. Some studies reduced data by averaging over all sources[2] over large intervals like 50ms. Others left sampling rate high but manually set a limit on how many sources they collected data from, selecting only the most ‘informative’[3] ones. Once the data was cleaned and pared, neat vectors ready to be classified were left.
 
 The classification task attempts to learn patterns in the neural data that correspond to the semantic properties of the noun. To this end standard machine learning techniques were employed, most common among them variations of support vector machines, linear regression, k-nearest neighbor, and Gaussian Na<span>ï</span>ve Bayes-pooled variance classifiers. The classifiers were often trained on a subset of all available data before being tested on the left-out data.
 
-Simply, the classifier tries to learn a function \(f : X \rightarrow Y\) as best it can where \(X\) consists of the neural data and \(Y\) consists of the predicted semantic properties. Hence we note that we can use the inverse, \(f^{-1} : Y \rightarrow X\), to move from semantic properties to predicted neural data.
+Simply, the classifier tries to learn a function f : X → Y as best it can where X consists of the neural data and Y consists of the predicted semantic properties. Hence we note that we can use the inverse, f^{-1} : Y → X, to move from semantic properties to predicted neural data.
 
 There’s a problem: neural data are readily observable, but how do we decide on semantic categories? Several approaches were used.
 
@@ -88,4 +87,3 @@ From Eardrum Vibrations to Semantic Dimensions (14)
 [2] “sources” here is a catch-all for the “atomic” part of a feature vector of a study, whether they’re readings of MEG/EEG channels or fMRI voxels.
 
 [3] What this really means varies from study to study. For example, in , the voxels observed to be most stable were chosen.
-
