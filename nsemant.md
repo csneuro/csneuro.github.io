@@ -7,13 +7,13 @@ Neurosemantic Word Representation
 
 Scientific inquiry into the how concepts like *apple, honor, father, one*, etc. are represented in the mind has only recently become possible. New imaging machines and analysis methods from machine learning have both allowed neuroscientists to begin to investigate exactly how regions of the brain are responsible for encoding these concepts.
 
-The scope of investigation has mostly been restrained to *concrete* nouns, which refer to physical objects in the world, such as *celery, car, mouse,* and *house*. This was deliberate, as *a priori* we might assume that this category is most basic. Once concrete nouns are better understood, the hope is that we will be better equipped to investigate (a) compound nouns (*bird tape*), (b) abstract nouns (*shame*), (c) predications (*the coffee is cold*), etc.
-
 Explicitly, inquiry in neurosemantics attempts to answer these questions, as described by Mitchell (2008):
 
 > What is the predicted fMRI neural activity encoding word w?
 >
 > What is the basis set of semantic features and corresponding components of neural activation that explain the neural activations encoding meanings of concrete nouns?
+
+The scope of investigation has mostly been restrained to *concrete* nouns, which refer to physical objects in the world, such as *celery, car, mouse,* and *house*. This was deliberate, as *a priori* we might assume that this category is most basic. Once concrete nouns are better understood, the hope is that we will be better equipped to investigate (a) compound nouns (*bird tape*), (b) abstract nouns (*shame*), (c) predications (*the coffee is cold*), etc.
 
 Mapping Between Observed Neural Activity and Semantic Dimensions
 ----------------------------------------------------------------
@@ -67,7 +67,17 @@ So far these two assumptions have not outright failed researchers, but we may se
 
 From Vibrations to Semantic Dimensions
 --------------------------------------
-Lorem ipsum
+The papers we have examined so far only concern themselves with semantic dimensions of words. But what can we say about how listeners map acoustic input to these semantic dimensions? Does semantic information from the lexicon inform listeners in their processing of acoustic information, or do they *only* use acoustic information in deciding which word to map the signal to?
+
+[Travis et al. (2013)][travis2013] investigate these questions by using MRI, ECG, and MEG imaging techniques to investigate. Assuming the existence of different neural processes for "acoustic-phonetic processing" and "lexico-semantic processing", subjects were presented with four types of stimuli consisting of a word and a paired picture: (1) picture-matched words, (2) picture-matched noise, (3) picture-mismatched words, and (4) picture-mismatched noise, where "noise" was a scrambled version of the corresponding word. The design then allowed for isolation of the acoustic-phonetic processing and lexico-semantic processing against the backdrop by comparing appropriate combinations of the four.
+
+Separate acoustic-phonetic and lexico-semantic processes were indeed identified, the former peaking around 100ms after stimulation, and the latter 200ms. The A-P process was isolated by comparing picture-matched noise with picture-matched words, while the L-S process was isolated by comparing picture-matched words with picture-mismatched words.
+
+Having identified these processes, it was concluded that lexico-semantic effects seemed to have no part in the early acoustic-phonetic phase, which is not surprising given that the L-S process peaks a full 100ms later. This is superficially troubling because it would leave is hard pressed to explain how polysemous words like *set* or *bank* are differentiated. The way out is that the study only established independence of these processes in the *earliest* phases before ~150ms after stimulation. Travis et al. state:
+
+>Statistical correlations [...] indicate that top-down influences may occur during the time period from 160 to 220 ms following word onset.
+
+So we see that listeners initially have no access to semantic information in deciding on how to process acoustic signals. Yet later the listener seems to gain access to lexico-semantic information, allowing her to bridge the gap between acoustic input and semantic dimensions.
 
 Neural Bases of Metaphors
 -------------------------
@@ -116,6 +126,7 @@ outline big questions posed in Where do you Know What you Know? also actual rela
 [travis2013]: http://www.ncbi.nlm.nih.gov/pubmed/22875868
 
 [parkinson2014]: http://www.jneurosci.org/content/34/5/1979.full
+
 
 
 
