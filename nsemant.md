@@ -79,25 +79,16 @@ Having identified these processes, it was concluded that lexico-semantic effects
 
 So we see that listeners initially have no access to semantic information in deciding on how to process acoustic signals. Yet later the listener seems to gain access to lexico-semantic information, allowing her to bridge the gap between acoustic input and semantic dimensions.
 
-Neural Bases of Metaphors
--------------------------
-
-
 Conclusion
 ----------
 
-Neurosemantic theory is in its infancy: it is hard to even call a ‘theory’ what might be more appropriately called a collection of observata. This line of inquiry is still only in its infancy, with approaches still being refined. Further, contemporary instruments, despite great advances, give data that is too noisy for even the best analytical techniques to produce near-perfect or even pretty good predictions. As such, we are still far from being able to “read minds” using these machines, as a cursory understanding of the literature might at first suggest.
+Neurosemantic theory is in its infancy: it is hard to even call a ‘theory’ what might be more appropriately called a collection of observata. This line of inquiry is still only in its infancy, with approaches still being refined. Further, contemporary instruments, despite great advances, give data that is too noisy for even the best analytical techniques to produce near-perfect or even pretty-good predictions. As such, we are still far from being able to “read minds” using these machines, as a cursory understanding of the literature might at first suggest.
 
-But we do not wish to understate the accomplishments that have been made. These studies in neurosemantics have shown, for example, that the regions that encode semantic factors are mostly the same across people. Further, as we have seen, the studies have demonstrated somewhat convincingly that neural representations of concrete nouns can be understood as linear parameterizations of semantic factors. Further, it
+But we do not wish to understate the accomplishments that have been made. These studies in neurosemantics have shown, for example, that the regions that encode semantic factors are mostly the same across people. Further, as we have seen, the studies have demonstrated somewhat convincingly that neural representations of concrete nouns can be understood as linear parameterizations of semantic factors. 
 
-There are many directions future research could take. Very many questions remain unanswered, among them being
+There are many directions future research could take. If we accept the assumptions that have been made in the body of literature, we see still that there are very many questions that could be investigated further. As stated in the beginning, very little has been done in probing the neural structure of predications, novel compound nouns, abstract nouns, and other classes of words. 
 
-
-trashheap
----------
-distributed vs. distributed-plus-hub vs. convergent zones, Mr. M
-
-outline big questions posed in Where do you Know What you Know? also actual relations between words
+But it seems we will need to patiently wait for advances in neuroimaging technology before we will be able to seriously challenge the fundamental assumptions being made, as at present resolution is simply so poor that any number of theoretical frameworks could be “shown” viable. 
 
 [1] All techniques used to get brain data introduce artifacts which we want to remove before analysis. One example is the noise caused by the frequency at which AC power is provided: 60 Hz in the United States and 50 Hz most anywhere else. The details of what else is accounted for is beyond the scope of this review.
 
